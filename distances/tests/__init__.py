@@ -1,9 +1,12 @@
 """Tests for the distances library."""
+
 __all__ = ["TestDistances"]
-import distances
+import unittest
 from math import dist
 from typing import override
-import unittest
+
+import distances
+
 
 class TestDistances(unittest.TestCase):
     @override
@@ -17,16 +20,10 @@ class TestDistances(unittest.TestCase):
         )
 
     def test_taxicab(self) -> None:
-        self.assertAlmostEqual(
-            distances.taxicab(self.fst, self.snd), 10.68, 2
-        )
+        self.assertAlmostEqual(distances.taxicab(self.fst, self.snd), 10.68, 2)
 
     def test_chebyshev(self) -> None:
-        self.assertAlmostEqual(
-            distances.chebyshev(self.fst, self.snd), 6.46, 2
-        )
+        self.assertAlmostEqual(distances.chebyshev(self.fst, self.snd), 6.46, 2)
 
     def test_cosine(self) -> None:
-        self.assertAlmostEqual(
-            distances.cosine(self.fst, self.snd), .32, 2
-        )
+        self.assertAlmostEqual(distances.cosine(self.fst, self.snd), 0.32, 2)
