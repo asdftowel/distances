@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "distances"
+version = "1.0.0"
+requires-python = ">= 3.12"
+authors = [{name = "asdftowel"}]
+description = "Library for computing distances between points"
+readme = "README.md"
+license = "Apache-2.0"
+keywords = ["chebyshev", "euclidean", "taxicab", "cosine distance"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Typing :: Typed"
+]
+
+[projects.urls]
+Repository = "https://github.com/asdftowel/distances"
